@@ -16,9 +16,10 @@ const images = [
 const listEl = document.querySelector('.gallery');
 
 // 1 version
+
 const imageProduktCard = image => {
   const itemEl = document.createElement('li');
-  // itemEl.classList.add('gallery-item')
+  itemEl.classList.add('item-gallery')
   const imageEl = document.createElement('img');
   imageEl.src = image.url;
   imageEl.alt = image.alt;
