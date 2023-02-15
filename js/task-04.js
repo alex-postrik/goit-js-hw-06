@@ -18,7 +18,7 @@ refs.increment.addEventListener('click', ()  =>  {
 
 
 
-// // version 2
+// =======================================================================
 // const incrementEl = document.querySelector('[data-action="increment"]');
 // const decrementEl = document.querySelector('[data-action="decrement"]');
 // const valueEl = document.querySelector('#value');

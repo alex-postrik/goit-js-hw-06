@@ -22,7 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-.item-gallery {
+.gallery__item {
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
-
+.gallery__image {
+  display: inline-block;
+  margin: 20px;
+  
+}

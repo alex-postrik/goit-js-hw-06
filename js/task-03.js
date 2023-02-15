@@ -15,24 +15,23 @@ const images = [
 
 const listEl = document.querySelector('.gallery');
 
-// 1 version
+const markup = images.map(({ url, alt }) => `<li class="gallery__item">
+<img class="gallery__image" src="${url}" alt="${alt}" width="500">
+</li>`) .join('');
+listEl.insertAdjacentHTML('afterbegin', markup);
 
-const imageProduktCard = image => {
-  const itemEl = document.createElement('li');
-  itemEl.classList.add('item-gallery')
-  const imageEl = document.createElement('img');
-  imageEl.src = image.url;
-  imageEl.alt = image.alt;
-  imageEl.width = 350;
+// ===============================================
+// const imageProduktCard = image => {
+//   const itemEl = document.createElement('li');
+//   itemEl.classList.add('gallery__item')
+//   const imageEl = document.createElement('img');
+//   imageEl.src = image.url;
+//   imageEl.alt = image.alt;
+//   imageEl.width = 350;
 
-  itemEl.append(imageEl);
-  return itemEl;
-};
-const elements = images.map(imageProduktCard);
-listEl.append(...elements);
+//   itemEl.append(imageEl);
+//   return itemEl;
+// };
+// const elements = images.map(imageProduktCard);
+// listEl.append(...elements);
 
-// 2 version
-// const markup = images.map(({ url, alt }) => `<li>
-// <img  src="${url}" alt="${alt}" width="400">
-// </li>`).join("");
-// itemEl.insertAdjacentHTML("afterbegin", markup);
