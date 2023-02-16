@@ -12,6 +12,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// ===============================================
+
 
 const listEl = document.querySelector('.gallery');
 
@@ -20,7 +22,10 @@ const markup = images.map(({ url, alt }) => `<li class="gallery__item">
 </li>`) .join('');
 listEl.insertAdjacentHTML('afterbegin', markup);
 
+
 // ===============================================
+
+
 // const imageProduktCard = image => {
 //   const itemEl = document.createElement('li');
 //   itemEl.classList.add('gallery__item')
@@ -35,3 +40,24 @@ listEl.insertAdjacentHTML('afterbegin', markup);
 // const elements = images.map(imageProduktCard);
 // listEl.append(...elements);
 
+
+// ===============================================
+
+
+// const listEl = document.querySelector('.gallery');
+
+// const liEl = document.createElement('li');
+// liEl.style.listStyle = 'none';
+
+// const imageProductCard = images.reduce((acc, {url, alt}) => {
+//   const imgEl = document.createElement('img');
+//   imgEl.src = url;
+//   imgEl.alt = alt;
+//   imgEl.style.display = 'flex';
+
+//   acc.append(imgEl);
+
+//   return imgEl;
+// }, liEl);
+
+// listEl.innerHTML(...liEl);
