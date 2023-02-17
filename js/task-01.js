@@ -8,6 +8,6 @@ itemEl.forEach(item =>  {
     console.log(`Category: ${title}`);
     console.log(`Elements: ${count}`);
 });
-
-
+// =================================================================
+// const itemRRef = document.querySelector(".item");
 
