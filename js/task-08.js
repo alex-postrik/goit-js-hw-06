@@ -8,7 +8,6 @@ function auditSubmit(event) {
   const {
     elements: { email, password },
   } = event.currentTarget;
-
   if (email.value === "" || password.value === "") {
     return console.log("Будь ласка заповніть всі поля!");
   }
